@@ -1,0 +1,33 @@
+FONT SIZES ON THE SITE
+======================
+
+All sizes are set in style.css. Search for the name in brackets to find
+the line to change.
+
+Font everywhere: Times New Roman (serif)
+
+
+What                                   Size    Bold?   Where in style.css
+-------------------------------------  ------  ------  ------------------
+Your name under the photo              30px    yes     h1
+Section headings ("Writing", "Now")    22px    yes     h2
+Everything else: paragraphs, links,    16px    no      body
+  the footer line at the bottom, the
+  bulleted writing list, dates
+Small grey ALL-CAPS label              11px    yes     .label
+  ("WORKING ON")
+
+
+Widths (these set how wide the text runs)
+-----------------------------------------
+Photo                                  200px wide, about 229px tall
+Left column (photo, name)              200px wide
+Gap between the two columns            5.6rem (= about 90px)
+Right column (main text)               36rem (= 576px) at most
+
+The white space left over on a wide screen becomes the margins on either
+side. To make the text narrower (bigger margins), lower 36rem in the
+grid-template-columns line near the bottom of style.css. To make it wider,
+raise it.
+
+On phones the two columns stack into one, at most 38rem (= 608px) wide.
